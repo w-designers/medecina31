@@ -1,0 +1,39 @@
+.section {
+  padding: 0 15px;
+  &-aboutus {
+    height: 58.5rem;
+    position: relative;
+    background: url('../img/aboutus-bg.jpg') no-repeat top left;
+  }
+}
+.wrapper {
+  max-width: 1050px;
+  margin: 0 auto;
+  &-aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-title {
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: $roboto;
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    &_aboutus {
+      color: #000;
+    }
+  }
+  &-subtitle {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+}

@@ -1,0 +1,50 @@
+.article {
+  position: relative;
+  display: flex;
+  padding-bottom: 3rem;
+  &::after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 53.08%, rgba(255, 255, 255, 0.69) 62.12%, rgba(255, 255, 255, 0.9) 69.51%, #FFFFFF 76.19%);
+  }
+  &-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+  &-item {
+    flex-basis: 30%;
+    max-width: 270px;
+    margin-bottom: 4.5rem;
+  }
+  &-image {
+    margin-bottom: 2rem;
+  }
+  &-title {
+    display: block;
+    font-weight: bold;
+    line-height: 1.9rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
+  &-description {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+  &-more {
+    font-family: $roboto;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+}

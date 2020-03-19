@@ -613,3 +613,120 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+
+/*------------------Стили Кирилла------------------*/
+.header
+{
+  background: url(/img/фон\ _мы\ заботимся\ о\ вас_.jpg);
+  height: 1820px;
+  background-size: cover;
+}
+.header_menu
+{
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 255, 255, 0.8);
+}
+.header_info
+{
+  display: flex;
+  justify-content:space-between;
+}
+a
+{
+color: black;
+text-decoration: none;
+}
+.tel::after
+{
+  position: absolute;
+  right: 0;
+  top: -4px;
+  display: block;
+  content: '';  
+  width: 30px;
+  height: 30px;
+  background: url(/img/иконка\ телефона.svg) no-repeat center;
+  background-size: cover;
+}
+.header_info
+{
+  margin-top: 23px;
+}
+
+.location
+{
+  display: flex;
+}
+.header_a 
+{
+  display: flex;
+  margin-top: 20px;
+  
+}
+.header_a a
+{
+margin-right: 20px;
+
+}
+.tel
+{
+  position: relative;
+  padding-right: 35px;
+  font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+margin-left: 83px;
+
+}
+.nav_text {
+  
+  width: 160px;
+  height: 28px;
+}
+.location_map
+{
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 10px;
+}
+.location-img
+{
+  height: 21px;
+}
+.baner_button
+{
+  width: 254px;
+height: 75px;
+background: linear-gradient(0.02deg, #BA5EFF 0.06%, #D092FF 99.94%);
+box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
+border-radius: 37.5px;
+outline: none;
+border: 0;
+}
+.baner_button-a
+{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFF5F4;
+}
+.core
+{
+  align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+}
+.baner_info
+{
+  max-width: 556px;
+}

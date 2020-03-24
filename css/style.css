@@ -22,6 +22,11 @@
   margin-bottom: 6rem;
 }
 
+.section-advantages {
+  background: #FFADC4 url("/img/bg-pattern.svg") repeat left top;
+  padding: 4rem 15px 2.5rem;
+}
+
 .section-consult {
   background: #d2cfc8 url("/img/consult-bg.jpg") no-repeat left;
   padding-top: 6rem;
@@ -242,6 +247,52 @@
 
 .consult-input:last-of-type {
   margin-bottom: 3.5rem;
+}
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.advantages-block {
+  max-width: 217px;
+  text-align: center;
+}
+
+.advantages-number {
+  position: relative;
+}
+
+.advantages-number_text {
+  display: block;
+  font-weight: bold;
+  font-size: 9.5rem;
+  line-height: 8.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.advantages-number_icon {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+
+.advantages-title {
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+.advantages-text {
+  line-height: 1.6rem;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .aboutus {
@@ -714,7 +765,6 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 
 /*------------------Стили Кирилла------------------*/
 a {

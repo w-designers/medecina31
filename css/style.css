@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .section {
-  padding: 0 15px;
-  margin-bottom: 6rem;
+  padding: 0 15px 6rem;
 }
 
 .section-aboutus {
@@ -20,11 +19,27 @@
 .section-doctors {
   background: #FFADC4 url("/img/bg-pattern.svg") repeat left top;
   padding: 4rem 15px 2.5rem;
+  margin-bottom: 6rem;
+}
+
+.section-consult {
+  background: #d2cfc8 url("/img/consult-bg.jpg") no-repeat left;
+  padding-top: 6rem;
+  background-size: cover;
 }
 
 .wrapper {
   max-width: 1050px;
   margin: 0 auto;
+}
+
+.wrapper-consult {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .wrapper-aboutus {
@@ -141,6 +156,71 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.consult-form {
+  position: relative;
+  max-width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 9rem 3rem 3.5rem;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #FFFFFF;
+  -webkit-box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.consult-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  color: #FFF5F4;
+  text-align: center;
+  background: linear-gradient(0.01deg, #BA5EFF 0.06%, #D092FF 99.94%);
+  border-radius: 25px 25px 0px 0px;
+}
+
+.consult-text {
+  font-weight: 300;
+  line-height: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.consult-label {
+  margin-bottom: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+
+.consult-input {
+  max-width: 295px;
+  margin-bottom: 2.5rem;
+  padding: 5px 3px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  outline: none;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.consult-input:last-of-type {
+  margin-bottom: 3.5rem;
 }
 
 .aboutus {
@@ -612,121 +692,4 @@ a:visited {
   color: #8f2fd8 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-
-
-/*------------------Стили Кирилла------------------*/
-.header
-{
-  background: url(/img/фон\ _мы\ заботимся\ о\ вас_.jpg);
-  height: 1820px;
-  background-size: cover;
-}
-.header_menu
-{
-height: 90px;
-left: 0px;
-top: 0px;
-
-background: rgba(255, 255, 255, 0.8);
-}
-.header_info
-{
-  display: flex;
-  justify-content:space-between;
-}
-a
-{
-color: black;
-text-decoration: none;
-}
-.tel::after
-{
-  position: absolute;
-  right: 0;
-  top: -4px;
-  display: block;
-  content: '';  
-  width: 30px;
-  height: 30px;
-  background: url(/img/иконка\ телефона.svg) no-repeat center;
-  background-size: cover;
-}
-.header_info
-{
-  margin-top: 23px;
-}
-
-.location
-{
-  display: flex;
-}
-.header_a 
-{
-  display: flex;
-  margin-top: 20px;
-  
-}
-.header_a a
-{
-margin-right: 20px;
-
-}
-.tel
-{
-  position: relative;
-  padding-right: 35px;
-  font-weight: bold;
-font-size: 18px;
-line-height: 25px;
-margin-left: 83px;
-
-}
-.nav_text {
-  
-  width: 160px;
-  height: 28px;
-}
-.location_map
-{
-  display: block;
-  font-size: 12px;
-  line-height: 14px;
-  margin-left: 10px;
-}
-.location-img
-{
-  height: 21px;
-}
-.baner_button
-{
-  width: 254px;
-height: 75px;
-background: linear-gradient(0.02deg, #BA5EFF 0.06%, #D092FF 99.94%);
-box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
-border-radius: 37.5px;
-outline: none;
-border: 0;
-}
-.baner_button-a
-{
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  text-transform: uppercase;
-  color: #FFF5F4;
-}
-.core
-{
-  align-items: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-}
-.baner_info
-{
-  max-width: 556px;
 }

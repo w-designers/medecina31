@@ -1,6 +1,5 @@
 .section {
-  padding: 0 15px;
-  margin-bottom: 6rem;
+  padding: 0 15px 6rem;
   &-aboutus {
     margin-bottom: 0;
     height: 58.5rem;
@@ -15,11 +14,21 @@
   &-doctors {
     background: #FFADC4 url('/img/bg-pattern.svg') repeat left top;
     padding:  4rem 15px 2.5rem;
+    margin-bottom: 6rem;
+  }
+  &-consult {
+    background: #d2cfc8 url('/img/consult-bg.jpg') no-repeat left;
+    padding-top: 6rem;
+    background-size: cover;
   }
 }
 .wrapper {
   max-width: 1050px;
   margin: 0 auto;
+  &-consult {
+    display: flex;
+    justify-content: flex-end;
+  }
   &-aboutus {
     display: flex;
     flex-direction: column;

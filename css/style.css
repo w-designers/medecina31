@@ -693,3 +693,294 @@ a:visited {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+/*------------------Стили Кирилла------------------*/
+.header
+{
+  background: url(/img/фон\ _мы\ заботимся\ о\ вас_.jpg);
+  height: 1830px;
+  background-size: cover;
+}
+.header_menu
+{
+height: 90px;
+left: 0px;
+top: 0px;
+
+background: rgba(255, 255, 255, 0.8);
+}
+.header_info
+{
+  display: flex;
+  justify-content:space-between;
+}
+a
+{
+color: black;
+text-decoration: none;
+outline:none;
+}
+.tel::after
+{
+  position: absolute;
+  right: 0;
+  top: -4px;
+  display: block;
+  content: '';  
+  width: 30px;
+  height: 30px;
+  background: url(/img/иконка\ телефона.svg) no-repeat center;
+  background-size: cover;
+}
+.header_info
+{
+  margin-top: 23px;
+}
+
+.location
+{
+  display: flex;
+}
+.header_a 
+{
+  display: flex;
+  margin-top: 20px;
+  
+}
+.header_a a
+{
+margin-right: 20px;
+
+}
+.tel
+{
+  position: relative;
+  padding-right: 35px;
+  font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+margin-left: 83px;
+
+}
+.nav_text {
+  
+  width: 160px;
+  height: 28px;
+}
+.location_map
+{
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  margin-left: 10px;
+}
+.location-img
+{
+  height: 21px;
+}
+.baner_button
+{
+  width: 254px;
+height: 75px;
+background: linear-gradient(0.02deg, #BA5EFF 0.06%, #D092FF 99.94%);
+box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
+border-radius: 37.5px;
+outline: none;
+border: 0;
+margin-top: 50px;
+}
+.baner_button:hover
+{
+  background: linear-gradient(0deg, #BA5EFF, #BA5EFF);
+  box-shadow: 0px 5px 23px rgba(186, 94, 255, 0.7);
+  border-radius: 37.5px;
+}
+.baner_button:active
+{
+  background: linear-gradient(0deg, #9200FF, #9200FF);
+box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
+border-radius: 37.5px;
+}
+.baner_button-a
+{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFF5F4;
+  outline:none;
+}
+.core
+{
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+margin-top: 59px;
+}
+.baner_info
+{
+  width: 556px;
+  height: 90px;
+  font-weight: 300;
+font-size: 16px;
+line-height: 30px;
+margin-top: 25px;
+}
+.our_servis
+{
+font-weight: bold;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+margin-left: 390px;
+margin-top: 560px;
+}
+.our_servis-text
+{
+font-size: 12px;
+line-height: 16px;
+color: rgba(0, 0, 0, 0.65);
+margin-left: 320px;
+margin-top: 8px;
+}
+li
+{
+ list-style-type: none;   
+}
+.box
+{
+  display: flex;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 21px;
+  margin-right: 21px;
+}
+.img_servise-1
+{
+background:url(/img/иконка\ анализов.svg) no-repeat;
+width: 45px;
+height: 45px;
+position: relative;
+left: 95px;
+top: -10px;
+}
+.img_servise-2
+{
+background: url(/img/иконка\ гинекология.svg) no-repeat;
+width: 45px;
+height: 45px;
+position: relative;
+left: 95px;
+top: -10px;
+}
+.img_servise-3
+{
+background: url(/img/иконка\ диагностика.svg) no-repeat;
+width: 45px;
+height: 43px;
+position: relative;
+left: 95px;
+top: -10px;
+}
+.img_servise-4
+{
+background: url(/img/иконка\ кардиология.svg) no-repeat;
+width: 45px;
+height: 44px;
+position: relative;
+left: 95px;
+top: -10px;
+}
+.img_servise-5
+{
+background: url(/img/иконка\ костылей.svg) no-repeat;
+width: 45px;
+height: 45px;
+position: relative;
+left: 95px;
+top: -10px;
+}
+.img_servise-6
+{
+background: url(/img/иконка\ процедур.svg) no-repeat;
+width: 45px;
+height: 45px;
+position: relative;
+left: 95px;
+top: -10px;
+}
+.box-a
+{
+  height: 190px;
+  padding: 0;
+  margin: 0;
+}
+.purple-box
+{
+  width: 236px;
+height: 190px;
+background: linear-gradient(0.06deg, #BA5EFF 0.06%, #D092FF 99.94%);
+border-radius: 10px;
+text-align: center;
+padding-top: 35px;
+}
+.purple-box:hover
+{
+  background: linear-gradient(0deg, #BA5EFF, #BA5EFF), linear-gradient(0.06deg, #BA5EFF 0.06%, #D092FF 99.94%);
+border-radius: 10px;
+}
+.purple-box:active
+{
+  background: linear-gradient(0deg, #9200FF, #9200FF), linear-gradient(0.06deg, #BA5EFF 0.06%, #D092FF 99.94%);
+  border-radius: 10px;
+}
+.super-box
+{
+  width: 820px;
+  height: 410px;
+  margin-left: 118px;
+  margin-top: 53px;
+}
+.box-text_top
+{
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+color: #FFF5F4;
+text-decoration: none;
+}
+.box-text_down
+{
+font-size: 12px;
+line-height: 16px;
+color: #FFF5F4;
+position: relative;
+top: 10px;
+text-decoration: none;
+}
+.service-button
+{
+width: 254px;
+height: 75px;
+background: linear-gradient(0.02deg, #BA5EFF 0.06%, #D092FF 99.94%);
+box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
+border-radius: 37.5px;
+border: 0;
+outline:none;
+margin-top: 60px;
+margin-left: 410px;
+}
+.service-button_a
+{
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #FFF5F4;
+}

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .section {
-  padding: 0 15px 6rem;
+  padding: 0 30px 6rem;
 }
 
 .section-aboutus {
@@ -293,6 +293,14 @@
 .advantages-text {
   line-height: 1.6rem;
   color: rgba(0, 0, 0, 0.65);
+}
+
+@media screen and (max-width: 900px) {
+  .advantages {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .aboutus {
@@ -685,6 +693,66 @@
   background: url("/img/inst.svg") no-repeat center;
 }
 
+@media screen and (max-width: 1430px) {
+  .section-consult {
+    background-size: unset;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .section-aboutus {
+    background: unset;
+    padding: 0 15px;
+    min-height: 30rem;
+  }
+  .section-doctors {
+    padding: 4rem 60px 2.5rem;
+  }
+  .section-consult {
+    background-size: unset;
+  }
+  .wrapper-aboutus {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wrapper-consult {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .aboutus {
+    max-width: 70%;
+  }
+  .aboutus-text {
+    margin: 0;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+  .aboutus-more {
+    color: #000000;
+    text-decoration: none;
+  }
+  .doctors-item {
+    max-width: 80% !important;
+  }
+  .footer-contacts-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -766,86 +834,91 @@ a:visited {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/*------------------Стили Кирилла------------------*/
 a {
   text-decoration: none;
   color: #000;
 }
-.header
-{
-  background: url(/img/фон\ _мы\ заботимся\ о\ вас_.jpg);
+
+.header {
+  background: url("../img/фон _мы заботимся о вас_.jpg");
   min-height: 100vh;
   background-size: cover;
   padding-bottom: 6rem;
 }
-.header_menu
-{
+
+.header_menu {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background: rgba(255, 255, 255, 0.8);
 }
-.header_info
-{
+
+.header_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content:space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.tel::after
-{
+
+.tel::after {
   position: absolute;
   right: 0;
   top: -4px;
   display: block;
-  content: '';  
+  content: '';
   width: 30px;
   height: 30px;
-  background: url(/img/иконка\ телефона.svg) no-repeat center;
+  background: url("../img/иконка телефона.svg") no-repeat center;
   background-size: cover;
 }
 
-.location
-{
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
-.header_a 
-{
+
+.header_a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 20px;
-  
 }
-.header_a a
-{
-margin-right: 20px;
 
+.header_a a {
+  margin-right: 20px;
 }
-.tel
-{
+
+.tel {
   position: relative;
   padding-right: 35px;
   font-weight: bold;
-font-size: 18px;
-line-height: 25px;
-margin-left: 83px;
-
+  font-size: 18px;
+  line-height: 25px;
+  margin-left: 83px;
 }
+
 .nav_text {
-  
   width: 160px;
   height: 28px;
 }
-.location_map
-{
+
+.location_map {
   display: block;
   font-size: 12px;
   line-height: 14px;
   margin-left: 10px;
 }
-.location-img
-{
+
+.location-img {
   height: 21px;
 }
+
 .baner {
   padding: 6rem 0 20rem;
 }
+
 a.header-link-appointment {
   display: block;
   padding: 3rem 5rem;
@@ -853,11 +926,12 @@ a.header-link-appointment {
   color: #FFF5F4;
   text-decoration: none;
 }
+
 a.header-link-appointment:hover {
   text-decoration: underline;
 }
-.core
-{
+
+.core {
   margin: 0;
   margin-bottom: 2.5rem;
   padding: 0;
@@ -868,25 +942,33 @@ a.header-link-appointment:hover {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
 .core_info {
   display: block;
   margin-bottom: 5rem;
 }
-.baner_info
-{
-  max-width: 556px;
 
+.baner_info {
+  max-width: 556px;
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
 }
+
 .servis_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.our_servis
-{
+
+.our_servis {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -896,76 +978,81 @@ a.header-link-appointment:hover {
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
-.our_servis-text
-{
+
+.our_servis-text {
   font-size: 1.2rem;
   line-height: 1.6rem;
   color: rgba(0, 0, 0, 0.65);
   margin-bottom: 5rem;
 }
-.box
-{
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 21px;
 }
-.img_servise-1
-{
-background:url(/img/иконка\ анализов.svg) no-repeat;
-width: 45px;
-height: 45px;
-position: relative;
-left: 95px;
-top: -10px;
+
+.img_servise-1 {
+  background: url("../img/иконка анализов.svg") no-repeat;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 95px;
+  top: -10px;
 }
-.img_servise-2
-{
-background: url(/img/иконка\ гинекология.svg) no-repeat;
-width: 45px;
-height: 45px;
-position: relative;
-left: 95px;
-top: -10px;
+
+.img_servise-2 {
+  background: url("../img/иконка гинекология.svg") no-repeat;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 95px;
+  top: -10px;
 }
-.img_servise-3
-{
-background: url(/img/иконка\ диагностика.svg) no-repeat;
-width: 45px;
-height: 43px;
-position: relative;
-left: 95px;
-top: -10px;
+
+.img_servise-3 {
+  background: url("../img/иконка диагностика.svg") no-repeat;
+  width: 45px;
+  height: 43px;
+  position: relative;
+  left: 95px;
+  top: -10px;
 }
-.img_servise-4
-{
-background: url(/img/иконка\ кардиология.svg) no-repeat;
-width: 45px;
-height: 44px;
-position: relative;
-left: 95px;
-top: -10px;
+
+.img_servise-4 {
+  background: url("../img/иконка кардиология.svg") no-repeat;
+  width: 45px;
+  height: 44px;
+  position: relative;
+  left: 95px;
+  top: -10px;
 }
-.img_servise-5
-{
-background: url(/img/иконка\ костылей.svg) no-repeat;
-width: 45px;
-height: 45px;
-position: relative;
-left: 95px;
-top: -10px;
+
+.img_servise-5 {
+  background: url("../img/иконка костылей.svg") no-repeat;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 95px;
+  top: -10px;
 }
-.img_servise-6
-{
-background: url(/img/иконка\ процедур.svg) no-repeat;
-width: 45px;
-height: 45px;
-position: relative;
-left: 95px;
-top: -10px;
+
+.img_servise-6 {
+  background: url("../img/иконка процедур.svg") no-repeat;
+  width: 45px;
+  height: 45px;
+  position: relative;
+  left: 95px;
+  top: -10px;
 }
-a.box-a
-{
+
+a.box-a {
   display: block;
   width: 100%;
   height: 100%;
@@ -973,90 +1060,103 @@ a.box-a
   margin: 0;
   text-decoration: none;
 }
+
 a.box-a::hover,
-a.box-a::focus
-{
+a.box-a::focus {
   text-decoration: none;
 }
+
 a.box-a:focus .purple-box {
-  background-color: rgb(171, 68, 250);  
+  background-color: #ab44fa;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.purple-box
-{
+
+.purple-box {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   width: 236px;
   height: 190px;
-  background-color: rgb(192, 115, 250);
+  background-color: #c073fa;
   border-radius: 10px;
   text-align: center;
   padding-top: 35px;
 }
-.purple-box:hover
-{
+
+.purple-box:hover {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-color: rgb(178, 82, 252);
+  background-color: #b252fc;
 }
-.purple-box:active
-{
+
+.purple-box:active {
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-color: #9200FF;
 }
-.super-box
-{
+
+.super-box {
   margin: 0;
   padding: 0;
   max-width: 750px;
   margin-bottom: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-.box-text_top
-{
+
+.box-text_top {
   display: block;
-font-weight: bold;
-font-size: 1.8rem;
-line-height: 2.5rem;
-color: #FFF5F4;
-text-decoration: none;
-margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #FFF5F4;
+  text-decoration: none;
+  margin-bottom: 1rem;
 }
-.box-text_down
-{
+
+.box-text_down {
   display: block;
-font-size: 12px;
-line-height: 16px;
-color: #FFF5F4;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFF5F4;
 }
-.service-button
-{
-width: 254px;
-height: 75px;
-background: linear-gradient(0.02deg, #BA5EFF 0.06%, #D092FF 99.94%);
-box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
-border-radius: 37.5px;
-border: 0;
-outline:none;
-margin-top: 60px;
-margin-left: 410px;
+
+.service-button {
+  width: 254px;
+  height: 75px;
+  background: linear-gradient(0.02deg, #BA5EFF 0.06%, #D092FF 99.94%);
+  -webkit-box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
+          box-shadow: 0px 3px 15px rgba(186, 94, 255, 0.75);
+  border-radius: 37.5px;
+  border: 0;
+  outline: none;
+  margin-top: 60px;
+  margin-left: 410px;
 }
-.service-button_a
-{
+
+.service-button_a {
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
   color: #FFF5F4;
 }
+
 .link-more {
   color: #FFF5F4;
-  
 }
+
 a.link-more {
   display: block;
   padding: 3rem 8rem;
 }
+
 a.link-more::hover {
   text-decoration: none;
 }

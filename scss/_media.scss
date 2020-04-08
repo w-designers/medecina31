@@ -4,6 +4,11 @@
       background-size: unset;
     }
   }
+  .map {
+    &-contacts-container {
+      right: 10rem;
+    }
+  }
 }
 @media screen and (max-width: 900px) {
   .section {
@@ -50,10 +55,27 @@
       max-width: 80% !important;
     }
   }
+  
   .footer {
     &-contacts-container {
       flex-wrap: wrap;
       justify-content: space-evenly;
+    }
+  }
+}
+@media screen and (max-width: 768px) { 
+  .map {
+    &-contacts-container {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 576px) { 
+  .section {
+    &-map {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1.5rem;
     }
   }
 }

@@ -41,6 +41,17 @@ $(document).ready(function() {
   }  
 });
 
+
+let header_phone = document.querySelector('.header_a-phone');
 document.querySelector('.menu-icon-wrapper').onclick = function() {
   document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
+  if (document.querySelector('.menu-icon').classList.contains('menu-icon-active')) {
+    header_phone.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+  else {
+    header_phone.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+  }
 }
+

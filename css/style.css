@@ -1180,9 +1180,49 @@ a.link-more::hover {
   text-decoration: none;
 }
 
+.header_a-phone {
+  display: none;
+}
+
 @media (max-width: 680px) {
   .header_a {
     display: none;
+  }
+  .header_a-phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: absolute;
+    z-index: 39;
+    margin: 0;
+    padding: 80px 30px 30px;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .header_a-phone a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .hidden {
+    -webkit-transform: translateX(-320px);
+            transform: translateX(-320px);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
   .location {
     display: none;
@@ -1248,7 +1288,7 @@ a.link-more::hover {
   .menu-icon-wrapper {
     position: absolute;
     top: 35px;
-    margin-left: 20px;
+    left: 30px;
     width: 40px;
     height: 40px;
   }
@@ -1270,9 +1310,6 @@ a.link-more::hover {
     width: 293px;
     margin: 0 auto 0 auto;
   }
-  .button__appointment {
-    width: 293px;
-  }
   .purple-box {
     margin-left: 10px;
     margin-right: 10px;
@@ -1285,10 +1322,16 @@ a.link-more::hover {
 }
 
 @media (max-width: 511px) {
+  .header_menu {
+    padding: 10px;
+  }
+  img.logo {
+    margin-right: unset;
+  }
   .menu-icon-wrapper {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 27px;
+    left: 27px;
   }
   .core {
     font-size: 30px;

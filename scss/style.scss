@@ -407,12 +407,40 @@ a.link-more {
 a.link-more::hover {
   text-decoration: none;
 }
-
+.header_a-phone {
+  display: none;
+}
 @media (max-width: 680px)
 {
   .header_a
   {
-    display: none; 
+    display: none;
+  }
+  .header_a-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 39;
+    margin: 0;
+    padding: 80px 30px 30px;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+  .header_a-phone a {
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 30px;
+  }
+  .hidden {
+    transform: translateX(-320px);
+    transition: all 0.3s;
   }
   .location
   {
@@ -477,7 +505,7 @@ a.link-more::hover {
     {
       position: absolute;
       top: 35px;
-      margin-left: 20px;
+      left: 30px;
       width: 40px;
       height: 40px;
     }
@@ -506,10 +534,6 @@ a.link-more::hover {
       width: 293px;
       margin: 0 auto 0 auto;
     }
-    .button__appointment
-    {
-      width: 293px;
-    }
     .purple-box
     {
       margin-left: 10px;
@@ -521,11 +545,17 @@ a.link-more::hover {
 }
 @media (max-width: 511px)
 {
+  .header_menu {
+    padding: 10px;
+  }
+  img.logo {
+    margin-right: unset;
+  }
   .menu-icon-wrapper
   {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    position: absolute;
+    top: 27px;
+    left: 27px;
   }
   .core
     {
